@@ -11,5 +11,3 @@ RUN npm install
 COPY . ./
 
 CMD [ "npm", "run", "dev" ]
-
-# ENTRYPOINT [ "npm run dev" ]
