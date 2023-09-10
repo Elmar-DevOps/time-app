@@ -1,0 +1,10 @@
+# Exclude build artifacts
+node_modules
+.git
+
+# Exclude temporary files
+*.log
+*.tmp
+
+# Exclude specific files
+Dockerfile
