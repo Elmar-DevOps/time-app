@@ -5,6 +5,9 @@ services:
     ports:
       - '3000:3000'
     restart: always
+    volumes:
+      - /app/node_modules
+      - ./frontend:/app
   api:
     build: ./api
     ports:
@@ -13,6 +16,9 @@ services:
       mysql:
         condition: service_healthy
     restart: always
+    volumes:
+      - /app/node_modules
+      - ./api:/app
   mysql:
     image: mysql
     environment:
